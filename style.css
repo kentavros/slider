@@ -1,0 +1,80 @@
+body {
+    padding: 10px;
+}
+
+.carousel {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    font-size: 0px;
+}
+
+.carousel img{
+    width: 960px;
+    height: 300px;
+    display: block;
+}
+
+.prev{
+    left: -70px;
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    color: black;
+    transition: transform 0.5s, color 0.2s;
+    cursor: pointer;
+}
+
+.next{
+    right: -30px;
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    transition: transform 0.5s, color 0.2s;
+    color: black;
+    cursor: pointer;
+}
+
+.prev:active{
+    color: #cccccc;
+}
+
+.next:active{
+    color: #cccccc;
+}
+
+.gallery{
+    width: 960px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.gallery ul {
+    height: 130px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 500ms;
+}
+
+.gallery li{
+    display: inline-block;
+}
+
+.imgPrev{
+    cursor: pointer;
+    display: inline-block;
+    transition-duration: 0.5s;
+}
+
+.active, .imgPrev:hover{
+    opacity: 0.5;
+    border: 2px solid deepskyblue;
+}

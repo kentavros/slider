@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="carousel" class="carousel">
+        <button class="prev">&#10094</button>
+            <div class="gallery">
+                <ul class="images">
+                    <li><img src="images/dog.jpg" alt=""></li>
+                    <li><img src="images/tyty.jpg" alt=""></li>
+                    <li><img src="images/nature.jpg" alt=""></li>
+                </ul>
+            </div>
+        <button class="next">&#10095</button>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <img src="images/dog.jpg" class="imgPrev" onclick="currentSlide(1)" style="width: 10%" alt="">
+        <img src="images/tyty.jpg" class="imgPrev" onclick="currentSlide(2)" style="width: 10%" alt="">
+        <img src="images/nature.jpg" class="imgPrev" onclick="currentSlide(3)" style="width: 10%" alt="">
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
